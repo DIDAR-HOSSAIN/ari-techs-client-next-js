@@ -10,6 +10,7 @@ import {
 } from "@ant-design/icons";
 import Link from "next/link";
 import { USER_ROLE } from "./role";
+
 export const sidebarItems = (role: string) => {
   const defaultSidebarItems: MenuProps["items"] = [
     {
@@ -130,17 +131,17 @@ export const sidebarItems = (role: string) => {
       icon: <TableOutlined />,
       key: `/${role}/user`,
     },
-    // {
-    //   label: "Manage permission",
-    //   key: "manage-permission",
-    //   icon: <AppstoreOutlined />,
-    //   children: [
-    //     {
-    //       label: <Link href={`/${role}/permission`}>View permissions</Link>,
-    //       key: `/${role}/permission`,
-    //     },
-    //   ],
-    // },
+    {
+      label: "Manage permission",
+      key: "manage-permission",
+      icon: <AppstoreOutlined />,
+      children: [
+        {
+          label: <Link href={`/${role}/permission`}>View permissions</Link>,
+          key: `/${role}/permission`,
+        },
+      ],
+    },
     {
       label: "Management",
       key: "management",
