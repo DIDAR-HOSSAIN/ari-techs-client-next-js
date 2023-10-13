@@ -1,63 +1,42 @@
-"use client";
+// components/ui/navbar.tsx
+"use client"
+import { Layout, Menu } from 'antd';
+import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 
-import { useState } from "react";
-import { getUserInfo } from "@/services/auth.service";
-import React from 'react';
-import { Button, Layout, Menu, theme } from 'antd';
-import ActionBar from "./ActionBar";
-import Link from "next/link";
-import HeaderPage from "./header";
-import navbarItems from "@/constants/navbarItems";
+const { Header } = Layout;
 
-const { Header, Content, Footer } = Layout;
+const menuItems = [
+  {
+    key: 'mail',
+    icon: <MailOutlined />,
+    title: 'Mail',
+  },
+  {
+    key: 'app',
+    icon: <AppstoreOutlined />,
+    title: 'App',
+  },
+  {
+    key: 'setting',
+    icon: <SettingOutlined />,
+    title: 'Setting',
+  },
+  // Add more items as needed
+];
 
-const NavbarBar = () => {
-  const [collapsed, setCollapsed] = useState(false);
-
+const Navbar = () => {
   return (
-   <Layout className="layout">
-      <Header style={{ display: 'flex', alignItems: 'center' }}>
-        <div className="demo-logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={navbarItems}
-        />
-      </Header>
-      <ActionBar title="Department List">
-                <div className="flex">
-                  <input type="text" placeholder="Search..."
-                    style={
-                        {
-                            width: "20%"
-                        }
-                    }
-                    // onChange={
-                    //     (e) => {
-                    //         setSearchTerm(e.target.value)
-                    //     }
-                    // }
-                    />
-                    
-                    <HeaderPage /> 
-                  </div>             
-             
-            </ActionBar>
-      <Content style={{ padding: '0 50px', marginTop:"10px" }}>
-        <div className="site-layout-content">
-          <h1>this home content</h1>
-          <h1>this home content</h1>
-          <h1>this home content</h1>
-          <h1>this home content</h1>
-          <h1>this home content</h1>
-          <h1>this home content</h1>
-          <h1>this home content</h1>
-        </div>
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
-    </Layout>
+    <Header style={{ display: 'flex', alignItems: 'center' }}>
+      <div className="demo-logo" />
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['app']}>
+        {menuItems.map(item => (
+          <Menu.Item key={item.key} icon={item.icon}>
+            {item.title}
+          </Menu.Item>
+        ))}
+      </Menu>
+    </Header>
   );
 };
 
-export default NavbarBar;
+export default Navbar;
