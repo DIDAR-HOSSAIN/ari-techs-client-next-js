@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Layout } from 'antd';
 import Navbar from '@/components/ui/navbar';
+import HomeContents from '@/components/ui/home-contents';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,7 +27,9 @@ export default function RootLayout({
             {/* Include the Navbar component */}
             <Navbar />
             {/* Render the children */}
-            {children}
+            <HomeContents>
+              {children}
+            </HomeContents>
           </Layout>
         </body>
       </html>

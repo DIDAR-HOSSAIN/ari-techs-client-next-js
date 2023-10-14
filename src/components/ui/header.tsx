@@ -1,3 +1,4 @@
+
 import { Avatar, Button, Dropdown, Layout, MenuProps, Row, Space } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import { getUserInfo, removeUserInfo } from "@/services/auth.service";
@@ -26,9 +27,9 @@ const Header = () => {
   const { role } = getUserInfo() as any;
   return (
     <AntHeader
-      style={{
-        background: "#fff",
-      }}
+      // style={{
+      //   background: "#fff",
+      // }}
     >
       <Row
         justify="end"
@@ -40,9 +41,11 @@ const Header = () => {
         <p
           style={{
             margin: "0px 5px",
+            fontSize: 16,
+            color: 'white'
           }}
         >
-          {role}
+        {role}
         </p>
         <Dropdown menu={{ items }}>
           <a>
