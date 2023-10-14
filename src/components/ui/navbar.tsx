@@ -2,7 +2,7 @@
 "use client"
 import { Col, Image, Layout, Menu, Row } from 'antd';
 import Header from './header';
-// import logo from './../../../src/images/resource-images/Logo/logo-updated.jpg';
+// import logo from '@/images/resource-images/Logo/logo-updated.jpg';
 
 const { Header:AntHeader } = Layout;
 
@@ -48,8 +48,8 @@ const Navbar = () => {
     
       </Col>
       <Col className="gutter-row" span={12}>
-        <div style={{  }}>
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']}>
+        <div>
+          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']} style={{fontSize:"20px"}}>
         {menuItems.map(item => (
           <Menu.Item key={item.key}>
             {item.title}
@@ -60,7 +60,7 @@ const Navbar = () => {
         
       </Col>
       <Col className="gutter-row" span={6}>
-        <div style={{  }}>
+        <div>
           <Header />
         </div>
       </Col>

@@ -1,3 +1,4 @@
+import CarouselSlide from "./home/Carousel ";
 
 
 const HomePage = () => {
@@ -5,7 +6,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>This is home page</h1>
+      <CarouselSlide />
     </div>
   );
 };

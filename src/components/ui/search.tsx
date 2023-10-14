@@ -1,12 +1,12 @@
-import React from 'react';
+import { Input } from 'antd';
 
 const Search = () => {
     return (
         <div justify="center" align="middle" style={{ marginTop:"10px" }}>
-                <input type="text" placeholder="Search..."
+                <Input.Search type="text" placeholder="Search..."
                     style={
                         {
-                            width: "20%"
+                            width: "60%",
                         }
                     }
                     onChange={

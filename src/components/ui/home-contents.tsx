@@ -9,7 +9,6 @@ const HomeContents = ({children}:{children:React.ReactNode}) => {
         <Content style={{ padding: '0 50px' }}>
           <Search />
         <div className="site-layout-content">
-            
           {children}
         </div>
       </Content>
