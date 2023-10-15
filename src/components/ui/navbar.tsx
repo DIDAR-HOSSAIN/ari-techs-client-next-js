@@ -35,7 +35,7 @@ const Navbar = () => {
 <AntHeader justify="center" align="middle">
     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
       <Col className="gutter-row" span={6}>
-        <div style={{  }}>
+        <div>
           <Image
             width={150}
             height={65}

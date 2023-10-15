@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google';
 import { Layout } from 'antd';
 import Navbar from '@/components/ui/navbar';
 import HomeContents from '@/components/ui/home-contents';
+import CarouselSlide from './home/Carousel ';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,9 +28,11 @@ export default function RootLayout({
             {/* Include the Navbar component */}
             <Navbar />
             {/* Render the children */}
-            <HomeContents>
+            <div>
+              <HomeContents style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               {children}
             </HomeContents>
+            </div>
           </Layout>
         </body>
       </html>
