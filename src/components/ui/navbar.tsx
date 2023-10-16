@@ -32,7 +32,7 @@ const menuItems = [
 
 const Navbar = () => {
   return (
-<AntHeader justify="center" align="middle">
+<AntHeader>
     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
       <Col className="gutter-row" span={6}>
         <div>
@@ -60,9 +60,7 @@ const Navbar = () => {
         
       </Col>
       <Col className="gutter-row" span={6}>
-        <div>
           <Header />
-        </div>
       </Col>
     </Row>
       

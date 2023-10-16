@@ -1,12 +1,11 @@
-// components/layouts/root-layout.tsx
+
 import Providers from '@/lib/Providers';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Layout } from 'antd';
 import Navbar from '@/components/ui/navbar';
-import HomeContents from '@/components/ui/home-contents';
-import CarouselSlide from './home/Carousel ';
+import Search from '@/components/ui/search';
+import Services from '@/components/ui/Card';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,16 +23,12 @@ export default function RootLayout({
     <Providers>
       <html lang="en">
         <body className={inter.className}>
-          <Layout className="layout">
-            {/* Include the Navbar component */}
-            <Navbar />
-            {/* Render the children */}
-            <div>
-              <HomeContents style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              {children}
-            </HomeContents>
-            </div>
-          </Layout>
+         <div>
+          <Navbar />
+          <Search />
+          {children}
+         </div>
+          
         </body>
       </html>
     </Providers>

@@ -3,8 +3,9 @@ import slide from "../../../public/images/resource-images/background.jpg";
 import Image from 'next/image';
 
 const contentStyle: React.CSSProperties = {
+  marginTop:"20px",
     textAlign: 'center',
-    justifyItems:"center",
+    // justifyItems:"center",
     alignItems:"center",
     width:"70%",
     maxHeight:"50%",

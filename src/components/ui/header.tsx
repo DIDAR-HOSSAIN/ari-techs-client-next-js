@@ -4,7 +4,6 @@ import { UserOutlined } from "@ant-design/icons";
 import { getUserInfo, removeUserInfo } from "@/services/auth.service";
 import { authKey } from "@/constants/storageKey";
 import { useRouter } from "next/navigation";
-const { Header: AntHeader } = Layout;
 
 const Header = () => {
   const router = useRouter();
@@ -25,12 +24,14 @@ const Header = () => {
     },
   ];
   const { role } = getUserInfo() as any;
+  // const { role } = typeof window === 'undefined' ? { role: 'default_role' } : (getUserInfo() as any);
+
   return (
-    <AntHeader
+
       // style={{
       //   background: "#fff",
       // }}
-    >
+
       <Row
         justify="end"
         align="middle"
@@ -55,7 +56,7 @@ const Header = () => {
           </a>
         </Dropdown>
       </Row>
-    </AntHeader>
+
   );
 };
 
