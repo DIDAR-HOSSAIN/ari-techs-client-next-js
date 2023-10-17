@@ -6,12 +6,7 @@ const FreeEvaluation = () => {
 
     return (
        <>
-<h1 style={{ textAlign: "center", marginTop: "200px", fontSize: "3em",backgroundColor: "#fff1f0", color: "#363636" }}>Get a FREE evaluation  .</h1>
-
-
-
-
-
+          <h1 style={{ textAlign: "center", marginTop: "200px", fontSize: "3em",backgroundColor: "#fff1f0", color: "#363636" }}>Get a FREE evaluation</h1>
 
         <div style={{
         // use the src property of the image object
@@ -23,7 +18,7 @@ const FreeEvaluation = () => {
         backgroundRepeat: "no-repeat",
         width: "100vw",
         height: "100vh",
-        marginTop:'-500px',
+        marginTop:'-350px',
         // display: 'flex',
         // alignItems: 'center',
         // justifyContent: 'center'

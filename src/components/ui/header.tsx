@@ -24,7 +24,6 @@ const Header = () => {
     },
   ];
   const { role } = getUserInfo() as any;
-  // const { role } = typeof window === 'undefined' ? { role: 'default_role' } : (getUserInfo() as any);
 
   return (
 
@@ -35,9 +34,6 @@ const Header = () => {
       <Row
         justify="end"
         align="middle"
-        style={{
-          height: "100%",
-        }}
       >
         <p
           style={{

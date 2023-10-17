@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/ui/navbar';
 import Search from '@/components/ui/search';
-import Services from '@/components/ui/CardService';
 
 const inter = Inter({ subsets: ['latin'] });
 

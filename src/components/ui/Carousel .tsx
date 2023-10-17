@@ -1,18 +1,9 @@
 import { Carousel } from 'antd';
-import slide from "@/assets/images/resource-images/background.jpg";
+import slide from "@/assets/images/resource-images/slider-image/ladies.jpg";
+import slide1 from "@/assets/images/resource-images/slider-image/office.jpg";
+import slide2 from "@/assets/images/resource-images/slider-image/background.jpg";
 import Image from 'next/image';
 
-// const contentStyle: React.CSSProperties = {
-//   marginTop:"20px",
-//     textAlign: 'center',
-//     // justifyItems:"center",
-//     alignItems:"center",
-//     width:"70%",
-//     maxHeight:"50%",
-//     borderRadius: "10px", // Set your desired border radius value
-//     overflow: "hidden"
-//     // background: '#364d79'
-// };
 
 const CarouselSlide = () => {
   return (
@@ -30,7 +21,7 @@ const CarouselSlide = () => {
           <Image
             width={1600}
             height={500}
-            src={slide}
+            src={slide1}
             alt="Image 2"
           />
         </div>
@@ -38,7 +29,7 @@ const CarouselSlide = () => {
           <Image
             width={1600}
             height={500}
-            src={slide}
+            src={slide2}
             alt="Image 3"
           />
         </div>

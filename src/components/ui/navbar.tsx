@@ -1,8 +1,9 @@
 // components/ui/navbar.tsx
 "use client"
-import { Col, Image, Layout, Menu, Row } from 'antd';
+import { Col, Layout, Menu, Row } from 'antd';
 import Header from './header';
-// import logo from '@/images/resource-images/Logo/logo-updated.jpg';
+import logo from '@/assets/images/resource-images/Logo/logo-transparent.png';
+import Image from 'next/image';
 
 const { Header:AntHeader } = Layout;
 
@@ -40,9 +41,7 @@ const Navbar = () => {
             width={150}
             height={65}
             alt=''
-            src="https://www.sender.net/wp-content/uploads/2022/08/b059-What-is-online-advertising-small-1024x658.webp"
-            // src={logo}
-            preview={false}
+            src={logo}
           />
         </div>
     
