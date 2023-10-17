@@ -1,6 +1,6 @@
 import { Card, Col, Row } from 'antd';
 import Image from 'next/image';
-import slide from "../../../public/images/resource-images/background.jpg";
+import slide from "@/assets/images/resource-images/background.jpg";
 
 const Services = () => {
 

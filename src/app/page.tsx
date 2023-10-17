@@ -1,16 +1,18 @@
-import Services from "@/components/ui/Card";
-import CarouselSlide from "./home/Carousel ";
+import Services from "@/components/ui/CardService";
+import CarouselSlide from "../components/ui/Carousel ";
 import WhyChooseUs from "@/components/ui/why-choose-us";
+import FreeEvaluation from "@/components/ui/free-evaluation";
 
 
 const HomePage = () => {
 
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop:"20px" }}>
+    <div>
       <CarouselSlide />
       <Services />
       <WhyChooseUs />
+      <FreeEvaluation />
     </div>
   );
 };

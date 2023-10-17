@@ -45,7 +45,7 @@ import { acDepartmentOptions, acSemesterOptions, facultyOptions, genderOptions }
             <FormSelectField size="large" name="student.gender" options={genderOptions} label=" Gender" placeholder='Select gender' />
           </Col>
           <Col className="gutter-row" span={6} style={{ marginBottom:"10px" }}>
-             <UploadImage />
+             <UploadImage name="file" />
           </Col>
         </Row>
         </div>

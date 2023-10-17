@@ -1,5 +1,5 @@
 import { Carousel } from 'antd';
-import slide from "../../../public/images/resource-images/background.jpg";
+import slide from "@/assets/images/resource-images/background.jpg";
 import Image from 'next/image';
 
 const contentStyle: React.CSSProperties = {
