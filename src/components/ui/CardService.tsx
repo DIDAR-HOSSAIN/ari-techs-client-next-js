@@ -1,5 +1,4 @@
 import { Card, Col, Row } from 'antd';
-import Image from 'next/image';
 import slide from "@/assets/images/resource-images/services/1.png";
 import slide1 from "@/assets/images/resource-images/services/2.png";
 import slide2 from "@/assets/images/resource-images/services/3.png";
@@ -16,7 +15,7 @@ const Services = () => {
   
   return (
     <div  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: "20px", }}>
-      <h1 style={{marginBottom:"20px"}}>Our Network Services</h1>
+      <h1 style={{marginBottom:"20px", color:"#1890ff", fontSize:"50px"}}>Our Network Services</h1>
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center" align="middle" 
       style={{
         backgroundImage: `url(${freeEvaluation.src})`,

@@ -9,6 +9,11 @@ import { Col, Row } from "antd";
 
 const WhyChooseUs = () => {
     return (
+<>
+<div style={{marginTop:"20px", textAlign:"center", color:"#1890ff"}}>
+<h3>WHY CHOOSE US</h3>
+<h1>5 Reasons to partner with Aritechs</h1>
+</div>
     <Row
       gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       style={{ width: "100%", }}
@@ -18,7 +23,7 @@ const WhyChooseUs = () => {
     >
 
       <Col  className="gutter-row" span={10}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop:"20px" }}>
         <Image src={certified} width={200} height={200} alt="Certified image" />
         </div>
       </Col>
@@ -82,6 +87,7 @@ const WhyChooseUs = () => {
          </div>
          </Col>
      </Row>
+</>
     );
 };
 

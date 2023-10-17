@@ -6,7 +6,9 @@ const FreeEvaluation = () => {
 
     return (
        <>
-          <h1 style={{ textAlign: "center", marginTop: "200px", fontSize: "3em",backgroundColor: "#fff1f0", color: "#363636" }}>Get a FREE evaluation</h1>
+         <div style={{textAlign: "center", marginTop: "20px", fontSize: "30px", }}>
+           <h1 >Get a FREE evaluation</h1>
+         </div>
 
         <div style={{
         // use the src property of the image object
