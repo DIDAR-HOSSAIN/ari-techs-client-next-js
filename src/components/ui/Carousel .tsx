@@ -2,21 +2,21 @@ import { Carousel } from 'antd';
 import slide from "@/assets/images/resource-images/background.jpg";
 import Image from 'next/image';
 
-const contentStyle: React.CSSProperties = {
-  marginTop:"20px",
-    textAlign: 'center',
-    // justifyItems:"center",
-    alignItems:"center",
-    width:"70%",
-    maxHeight:"50%",
-    borderRadius: "10px", // Set your desired border radius value
-    overflow: "hidden"
-    // background: '#364d79'
-};
+// const contentStyle: React.CSSProperties = {
+//   marginTop:"20px",
+//     textAlign: 'center',
+//     // justifyItems:"center",
+//     alignItems:"center",
+//     width:"70%",
+//     maxHeight:"50%",
+//     borderRadius: "10px", // Set your desired border radius value
+//     overflow: "hidden"
+//     // background: '#364d79'
+// };
 
 const CarouselSlide = () => {
   return (
-    <div style={contentStyle}>
+    <div style={{marginTop:"20px"}}>
       <Carousel autoplay>
         <div>
           <Image
