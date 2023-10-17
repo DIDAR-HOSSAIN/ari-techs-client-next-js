@@ -20,7 +20,7 @@ const DashboardLayout = ({children}:{children:React.ReactNode}) => {
       setIsLoading(true)
     }, [router, isLoading]);
     
-    console.log(router,isLoading);
+
 
 
 
