@@ -92,7 +92,7 @@ const Services = () => {
         margin: 'auto'
       }}
       >
-        <h1 style={{color:"white"}}>WIFI Solutin</h1>
+        <h1 style={{color:"white"}}>WIFI Solution</h1>
         </Card>
       </Col>
 
