@@ -1,3 +1,4 @@
+
 "use client";
 import { Button, Col, Row, message } from "antd";
 import loginImage from "./../../assets/login-image.png"
@@ -17,6 +18,7 @@ type FormValues = {
 
 
 const LoginPage = () => {
+
 const [userLogin] = useUserLoginMutation();
 const router = useRouter();
 
@@ -43,15 +45,15 @@ const router = useRouter();
       <h1 style={{ margin: "15px 0px" }}>Login your account</h1>
       <div>
         <Form submitHandler={onSubmit}>
-            <div>
-                <FormInput name="id" type="text" size="large" label="User ID" />
-            </div>
-            <div style={{ margin: "15px 0px" }}>
-                <FormInput name="password" type="password" size="large" label="User Password" />
-            </div>
-
-            <Button type="primary" htmlType="submit">Submit</Button>
-        </Form>
+                <div>
+                    <FormInput name="id" type="text" size="large" label="User ID" />
+                </div>
+                <div style={{ margin: "15px 0px" }}>
+                    <FormInput name="password" type="password" size="large" label="User Password" />
+                </div>
+    
+                <Button type="primary" htmlType="submit">Submit</Button>
+            </Form>
       </div>
     </Col>
   </Row>
