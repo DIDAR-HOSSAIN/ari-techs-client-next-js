@@ -9,7 +9,7 @@ import FormInput from "@/components/Forms/FormInput";
 import { useUserLoginMutation } from "@/redux/api/authApi";
 import { storeUserInfo } from "@/services/auth.service";
 import { useRouter } from "next/navigation";
-
+import GoogleLogin from "./GoogleLogin";
 
 type FormValues = {
     id: string;
@@ -55,8 +55,17 @@ const router = useRouter();
                 <Button type="primary" htmlType="submit">Submit</Button>
             </Form>
       </div>
+      <div style={{ textAlign:"center" }}>
+        <h1 style={{ margin: "15px 0px" }}>Social Login</h1>
+
+          <Button type="primary" block style={{ fontSize:"25px" }}>
+          <GoogleLogin />
+        </Button>
+        
+      </div>
     </Col>
   </Row>
+  
     );
 };
 

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 
 export const metadata:Metadata ={
-  title:"UM | Login"
+  title:"Ari Techs | Login"
 };
 
 const Login = () => {

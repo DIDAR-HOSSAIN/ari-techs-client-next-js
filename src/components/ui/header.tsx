@@ -18,6 +18,22 @@ const Header = () => {
       key: "0",
       label: (
         <Button onClick={logOut} type="text" danger>
+          Login
+        </Button>
+      ),
+    },
+    {
+      key: "0",
+      label: (
+        <Button onClick={logOut} type="text" danger>
+          Sign Up
+        </Button>
+      ),
+    },
+    {
+      key: "0",
+      label: (
+        <Button onClick={logOut} type="text" danger>
           Logout
         </Button>
       ),
