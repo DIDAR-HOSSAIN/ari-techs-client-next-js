@@ -1,13 +1,5 @@
 import type { MenuProps } from "antd";
-import {
-  ProfileOutlined,
-  TableOutlined,
-  AppstoreOutlined,
-  ScheduleOutlined,
-  ThunderboltOutlined,
-  CreditCardOutlined,
-  FileTextOutlined,
-} from "@ant-design/icons";
+import {ProfileOutlined,} from "@ant-design/icons";
 import Link from "next/link";
 import { USER_ROLE } from "./role";
 
@@ -25,6 +17,10 @@ export const sidebarItems = (role: string) => {
         {
           label: <Link href={`/${role}/change-password`}>Change Password</Link>,
           key: `/${role}/change-password`,
+        },
+        {
+          label: <Link href={`/${role}/sign-up`}>Sign Up</Link>,
+          key: `/${role}/sign-up`,
         },
       ],
     },

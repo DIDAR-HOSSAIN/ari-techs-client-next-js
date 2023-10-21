@@ -13,7 +13,7 @@ const CarouselSlide = () => {
   };
 
   return (
-    <div style={{ marginTop: "20px" }}>
+    <div style={{ marginTop: "20px", borderRadius:"20px" }}>
       <Carousel autoplay>
         <div>
           <div style={imageStyle}>

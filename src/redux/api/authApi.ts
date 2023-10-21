@@ -13,8 +13,18 @@ export const authApi = baseApi.injectEndpoints({
       }),
       invalidatesTags:[tagTypes.user]
     }),
+
+    userSignUp: build.mutation({
+      query: (signUpData) => ({
+        url:`${AUTH_URL}/sign-up`,
+        method:"POST",
+        data:signUpData  
+      }),
+      invalidatesTags:[tagTypes.user]
+    }),
+
   }),
   overrideExisting: false,
 })
 
-export const { useUserLoginMutation } = authApi;
+export const { useUserLoginMutation, useUserSignUpMutation } = authApi;

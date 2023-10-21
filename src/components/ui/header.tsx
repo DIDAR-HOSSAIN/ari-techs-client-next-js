@@ -4,6 +4,8 @@ import { UserOutlined } from "@ant-design/icons";
 import { getUserInfo, removeUserInfo } from "@/services/auth.service";
 import { authKey } from "@/constants/storageKey";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+
 
 const Header = () => {
   const router = useRouter();
@@ -17,17 +19,22 @@ const Header = () => {
     {
       key: "0",
       label: (
-        <Button onClick={logOut} type="text" danger>
+        <Link href="/login">
+        <Button type="text" danger>
           Login
         </Button>
+        </Link>
+        
       ),
     },
     {
       key: "0",
       label: (
-        <Button onClick={logOut} type="text" danger>
+        <Link href={"/sign-up"}>
+        <Button type="text" danger>
           Sign Up
         </Button>
+        </Link>
       ),
     },
     {

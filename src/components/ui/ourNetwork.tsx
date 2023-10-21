@@ -1,7 +1,7 @@
 import { Col, Row } from 'antd';
 import freeEvaluation from "@/assets/images/resource-images/net_bg.png";
 
-const YourNetwork = () => {
+const OurNetwork = () => {
     return (
         <div  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: "20px", }}>
       <h1 style={{marginBottom:"20px", color:"#1890ff", fontSize:"50px"}}>Our Network Services</h1>
@@ -11,11 +11,7 @@ const YourNetwork = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100vw",
-        minHeight:"500px"
-        // marginTop:'-500px',
-        // display: 'flex',
-        // alignItems: 'center',
-        // justifyContent: 'center'
+        minHeight:"650px"
       }}>
 
       <Col className="gutter-row" span={8}>
@@ -27,4 +23,4 @@ const YourNetwork = () => {
     );
 };
 
-export default YourNetwork;
+export default OurNetwork;
