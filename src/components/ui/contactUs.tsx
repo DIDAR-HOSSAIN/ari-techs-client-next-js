@@ -1,7 +1,5 @@
 "use client";
 import { Button, Col, Row, message } from "antd";
-import loginImage from "./../../assets/login-image.png"
-import Image from "next/image";
 import Form from "@/components/Forms/Form";
 import {SubmitHandler} from "react-hook-form";
 import FormInput from "@/components/Forms/FormInput";
@@ -33,10 +31,10 @@ const router = useRouter();
         }
     };
     return (
-        <Row justify="center" align="middle" style={{ marginTop:"20px" }}>
-        <Col sm={12} md={16} lg={8}>
+        <Row justify="center" align="middle">
+        <Col sm={12} md={16} lg={8} style={{ marginTop:"20px" }}>
         <div>
-        <h1 style={{ margin: "15px 0px" }}>Why Choose Our IT Services?</h1>
+        <h1>Why Choose Our IT Services?</h1>
         <h1 style={{ margin: "15px 0px" }}>Grow your business</h1>
         <p>Focus on scalling and expanding your business, while we take care of your IT needs and network requirments.</p>
         </div>
@@ -52,8 +50,8 @@ const router = useRouter();
         </div>
         </Col>
     
-        <Col sm={12} md={8} lg={8}>
-          <h1 style={{ margin: "15px 0px" }}>Contact Us</h1>
+        <Col sm={12} md={8} lg={8} style={{ marginTop:"20px" }}>
+          <h1>Contact Us</h1>
           <div>
              <Form submitHandler={onSubmit}>
 
@@ -78,7 +76,7 @@ const router = useRouter();
             </div>
             
             <div>
-            <Button type="primary" size="large" htmlType="submit">Get a Free Consultation</Button>
+            <Button type="primary" block htmlType="submit" style={{ marginTop:"20px" }} >Get a Free Consultation</Button>
             </div>
 
         </Form>

@@ -1,15 +1,16 @@
 import { Card, Col, Divider, Row } from "antd";
+import React from "react";
 
 const CustomService = () => {
   const cardStyle = {
     height: 300,
     width: 350,
-    objectFit: 'cover',
+    objectFit: 'cover' as 'cover', // Make sure objectFit is of the correct type
     display: 'block',
     margin: 'auto',
-    borderTop: '20px solid green', // Top border
+    borderTop: '20px solid green',
     borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0', // Hard shadow
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0',
   };
 
   return (
