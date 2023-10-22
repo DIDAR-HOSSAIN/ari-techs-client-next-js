@@ -31,28 +31,28 @@ const router = useRouter();
         }
     };
     return (
-        <Row justify="center" align="middle">
-        <Col sm={12} md={16} lg={8} style={{ marginTop:"20px" }}>
+        <Row justify="center" align="middle"  style={{ marginTop:"20px" }}>
+        <Col sm={12} md={16} lg={8}>
         <div>
         <h1>Why Choose Our IT Services?</h1>
         <h1 style={{ margin: "15px 0px" }}>Grow your business</h1>
-        <p>Focus on scalling and expanding your business, while we take care of your IT needs and network requirments.</p>
+        <p style={{ fontSize: '20px'}}>Focus on scalling and expanding your business, while we take care of your IT needs and network requirments.</p>
         </div>
 
         <div>
           <h1 style={{ margin: "15px 0px" }}>Streamline Processes</h1>
-          <p>Increase productivity and performance of your organization when you have a dedicated IT support team by your side.</p>
+          <p style={{ fontSize: '20px'}}>Increase productivity and performance of your organization when you have a dedicated IT support team by your side.</p>
         </div>
 
         <div>
           <h1 style={{ margin: "15px 0px" }}>Empowering your people</h1>
-          <p>Allow your employees to do more and focus on their jobs, without being held back by tech issues and concerns.</p>
+          <p style={{ fontSize: '20px'}}>Allow your employees to do more and focus on their jobs, without being held back by tech issues and concerns.</p>
         </div>
         </Col>
     
-        <Col sm={12} md={8} lg={8} style={{ marginTop:"20px" }}>
+        <Col sm={12} md={8} lg={8}>
           <h1>Contact Us</h1>
-          <div>
+          <div style={{ fontSize: '20px'}}>
              <Form submitHandler={onSubmit}>
 
             <div>

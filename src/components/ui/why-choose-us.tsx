@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
     >
 
       <Col  className="gutter-row" span={10}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop:"20px" }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Image src={certified} width={200} height={200} alt="Certified image" />
         </div>
       </Col>
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
          </Col>
 
          <Col className="gutter-row" span={14}>
-         <div style={{ display: 'flex', flexDirection: 'column',  marginTop:"20px"  }}>
+         <div style={{ display: 'flex', flexDirection: 'column'  }}>
              <h2 style={{ fontSize: '35px'}}>Good Value</h2>
              <p style={{ fontSize: '20px'}}>Greate rates and someone you can trust to make sure you are taken care of without overspending.</p>
          </div>

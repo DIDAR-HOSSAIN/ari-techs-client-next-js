@@ -1,5 +1,5 @@
-// components/ui/navbar.tsx
-"use client"
+
+"use client";
 import { Col, Layout, Menu, Row } from 'antd';
 import Header from './header';
 import logo from '@/assets/images/resource-images/Logo/logo-transparent.png';

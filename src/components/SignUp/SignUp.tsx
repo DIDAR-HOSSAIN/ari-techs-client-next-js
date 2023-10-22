@@ -3,37 +3,33 @@ import { Button, Col, Row, message } from "antd";
 import loginImage from "./../../assets/login-image.png"
 import Image from "next/image";
 import Form from "@/components/Forms/Form";
-import {SubmitHandler} from "react-hook-form";
 import FormInput from "@/components/Forms/FormInput";
 import { useUserSignUpMutation } from "@/redux/api/authApi";
-import { storeUserInfo } from "@/services/auth.service";
-import { useRouter } from "next/navigation";
 import GoogleLogin from "../Login/GoogleLogin";
 
-type FormValues = {
-    id: string;
-    password: string;
-};
+// type FormValues = {
+//     name: string;
+//     email: string;
+//     password: string;
+// };
 
 const SignUpPage = () => {
 
     const [userSignUp] = useUserSignUpMutation();
 
-    const router = useRouter();
+    // const router = useRouter();
 
-    const onSubmit:SubmitHandler<FormValues> = async(data:any) =>{
-        try{
-            const res = await userSignUp({...data}).unwrap();
-            if(res?.accessToken){
-              router.push("/profile");
-              message.success("User logged in successfully");
-            }
-            storeUserInfo({accessToken: res?.accessToken});
-            console.log(res);
-        }catch(err:any){
-          console.log(err.message);
-        }
-    };
+    const onSubmit = async (data: any) => {
+    message.loading("Creating...");
+    try {
+      console.log(data);
+      await userSignUp(data);
+      message.success("Sign up successfully")
+    } catch (err: any) {
+      console.error(err.message);
+      message.error(err.message);
+    }
+  };
     
     return (
         <Row justify="center" align="middle" style={{ minHeight: "100vh", }}>

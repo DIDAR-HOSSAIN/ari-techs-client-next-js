@@ -1,5 +1,5 @@
 
-import { Avatar, Button, Dropdown, Layout, MenuProps, Row, Space } from "antd";
+import { Avatar, Button, Dropdown, MenuProps, Row, Space } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import { getUserInfo, removeUserInfo } from "@/services/auth.service";
 import { authKey } from "@/constants/storageKey";
@@ -28,7 +28,7 @@ const Header = () => {
       ),
     },
     {
-      key: "0",
+      key: "1",
       label: (
         <Link href={"/sign-up"}>
         <Button type="text" danger>
@@ -38,7 +38,7 @@ const Header = () => {
       ),
     },
     {
-      key: "0",
+      key: "2",
       label: (
         <Button onClick={logOut} type="text" danger>
           Logout
