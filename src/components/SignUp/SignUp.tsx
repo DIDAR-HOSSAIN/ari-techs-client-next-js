@@ -4,8 +4,8 @@ import loginImage from "./../../assets/login-image.png"
 import Image from "next/image";
 import Form from "@/components/Forms/Form";
 import FormInput from "@/components/Forms/FormInput";
-import { useUserSignUpMutation } from "@/redux/api/authApi";
-import GoogleLogin from "../Login/GoogleLogin";
+// import GoogleLogin from "../Login/GoogleLogin";
+import { useUserSignUpMutation } from "@/redux/api/signUpApi";
 
 // type FormValues = {
 //     name: string;
@@ -58,7 +58,7 @@ const SignUpPage = () => {
         <h1 style={{ margin: "15px 0px" }}>Social Login</h1>
 
           <Button type="primary" block style={{ fontSize:"25px" }}>
-          <GoogleLogin />
+          {/* <GoogleLogin /> */}
         </Button>
         
       </div>
