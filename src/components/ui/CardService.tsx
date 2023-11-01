@@ -14,21 +14,26 @@ const Services = () => {
 
   
   return (
-    <div  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: "20px", }}>
+    <div  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: "20px", }} >
+
       <h1 style={{marginBottom:"20px", color:"#1890ff", fontSize:"50px"}}>Our Network Services</h1>
-      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center" align="middle" 
-      style={{
+      <Row
+       gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+      //  grid={{ xs: 1, sm: 2, md: 2, lg: 3 }}
+        justify="center" 
+        align="middle" 
+        style={{
         backgroundImage: `url(${freeEvaluation.src})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        width: "100vw",
+        width: "73vw",
         // marginTop:'-500px',
         // display: 'flex',
         // alignItems: 'center',
         // justifyContent: 'center'
       }}>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide.src})`,
@@ -45,7 +50,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide1.src})`,
@@ -62,7 +67,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide2.src})`,
@@ -79,7 +84,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide3.src})`,
@@ -96,7 +101,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide4.src})`,
@@ -113,7 +118,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide5.src})`,
@@ -131,7 +136,7 @@ const Services = () => {
       </Col>
 
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide6.src})`,
@@ -148,7 +153,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide7.src})`,
@@ -165,7 +170,7 @@ const Services = () => {
         </Card>
       </Col>
 
-      <Col className="gutter-row" span={8}>
+      <Col className="gutter-row" xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }}>
       <Card
       style={{
         backgroundImage: `url(${slide8.src})`,

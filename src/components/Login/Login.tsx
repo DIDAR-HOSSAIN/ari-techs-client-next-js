@@ -35,6 +35,7 @@ const router = useRouter();
           console.log(err.message);
         }
     };
+    
     return (
     <Row justify="center" align="middle" style={{ minHeight: "100vh", }}>
     <Col sm={12} md={16} lg={8}>

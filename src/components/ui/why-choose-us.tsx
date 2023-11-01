@@ -15,20 +15,21 @@ const WhyChooseUs = () => {
 <h1>5 Reasons to partner with Aritechs</h1>
 </div>
     <Row
-      gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+      gutter={{ xs: 8, sm: 16, md: 24, lg: 16 }}
       style={{ width: "100%", }}
-      justify="space-between"
+      // justify="space-between"
+      justify="center"
       align="middle"
 
     >
 
-      <Col  className="gutter-row" span={10}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Col  className="gutter-row" span={6}>
+        <div style={{ alignItems: 'right' }}>
         <Image src={certified} width={200} height={200} alt="Certified image" />
         </div>
       </Col>
 
-      <Col className="gutter-row" span={14}>
+      <Col className="gutter-row" span={10}>
         <div style={{ display: 'flex', flexDirection: 'column',  }}>
           <h1 style={{ fontSize: '35px' }}>Industry leading vendor, certified engineers</h1>
           <p style={{ fontSize: '20px' }}>Cisco, Microsoft, Meraki, Fortinet, Paloalto, AWS.</p>
