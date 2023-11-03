@@ -4,7 +4,7 @@ import slide from "@/assets/images/resource-images/slider-image/ladies.jpg";
 import slide1 from "@/assets/images/resource-images/slider-image/office.jpg";
 import slide2 from "@/assets/images/resource-images/slider-image/background.jpg";
 import Image from 'next/image';
-import "@/app/carousel.module.css"; // Import styles for small devices
+import "@/app/carousel.module.css";
 
 const CarouselSlide = () => {
   return (

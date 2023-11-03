@@ -6,7 +6,7 @@ const FreeEvaluation = () => {
     return (
        <>
          <div style={{textAlign: "center", marginTop: "20px", fontSize: "25px", color: '#1890ff' }}>
-           <h1 >Get a FREE evaluation</h1>
+           <h1 style={{ backgroundColor:"green" }}>Get a FREE evaluation</h1>
          </div>
 
         <div style={{
@@ -21,7 +21,6 @@ const FreeEvaluation = () => {
         height: "120vh",
         marginTop:'-500px',
       }}>
-
         </div>
         </>
     );

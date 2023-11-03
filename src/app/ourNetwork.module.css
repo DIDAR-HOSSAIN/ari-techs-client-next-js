@@ -1,0 +1,36 @@
+/* our-network.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #1890ff;
+  font-size: 50px;
+}
+
+.responsive-bg {
+  background-image: url('../assets/images/resource-images/net_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 650px;
+}
+
+@media (max-width: 576px) {
+  .responsive-bg {
+    background-size: contain;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .responsive-bg {
+    background-size: contain;
+    min-height: 500px;
+  }
+}

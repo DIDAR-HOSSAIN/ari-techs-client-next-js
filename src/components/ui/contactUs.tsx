@@ -31,21 +31,21 @@ const router = useRouter();
         }
     };
     return (
-        <Row justify="center" align="middle"  style={{ marginTop:"20px" }}>
+        <Row justify="center" align="middle"  style={{ marginTop:"20px", marginLeft:"20px" }}>
         <Col sm={12} md={16} lg={8}>
         <div>
         <h1>Why Choose Our IT Services?</h1>
-        <h1 style={{ margin: "15px 0px" }}>Grow your business</h1>
+        <h1>Grow your business</h1>
         <p style={{ fontSize: '20px'}}>Focus on scalling and expanding your business, while we take care of your IT needs and network requirments.</p>
         </div>
 
         <div>
-          <h1 style={{ margin: "15px 0px" }}>Streamline Processes</h1>
+          <h1>Streamline Processes</h1>
           <p style={{ fontSize: '20px'}}>Increase productivity and performance of your organization when you have a dedicated IT support team by your side.</p>
         </div>
 
         <div>
-          <h1 style={{ margin: "15px 0px" }}>Empowering your people</h1>
+          <h1>Empowering your people</h1>
           <p style={{ fontSize: '20px'}}>Allow your employees to do more and focus on their jobs, without being held back by tech issues and concerns.</p>
         </div>
         </Col>

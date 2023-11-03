@@ -1,26 +1,18 @@
+import React from 'react';
 import { Col, Row } from 'antd';
-import freeEvaluation from "@/assets/images/resource-images/net_bg.png";
+import styles from '@/app/ourNetwork.module.css'; // Import your CSS Module file
 
 const OurNetwork = () => {
-    return (
-        <div  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: "20px", }}>
-      <h1 style={{marginBottom:"20px", color:"#1890ff", fontSize:"50px"}}>Our Network Services</h1>
-      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center" align="middle" 
-      style={{
-        backgroundImage: `url(${freeEvaluation.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        minHeight:"650px"
-      }}>
-
-      <Col className="gutter-row" span={8}>
-        <h1 style={{color:"white", fontSize:"60px"}}>YOUR NETWORK <br /> OUR EXPERTISE</h1>
-      </Col>
-
-    </Row>
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>Our Network Services</h1>
+      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center" align="middle" className={styles['responsive-bg']}>
+        <Col className="gutter-row" span={8}>
+          <h1 style={{ color: "white", fontSize: "60px" }}>YOUR NETWORK <br /> OUR EXPERTISE</h1>
+        </Col>
+      </Row>
     </div>
-    );
+  );
 };
 
 export default OurNetwork;
